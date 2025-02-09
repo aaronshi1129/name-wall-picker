@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Name Wall Picker</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Name Wall Picker</h1>
+    <textarea id="nameInput" placeholder="Enter names or numbers (one per line)&#10;Supports ranges like 1-10"></textarea>
+    <div class="controls">
+      <button id="generateButton">Generate Wall</button>
+      <button id="pickButton">Pick Random</button>
+    </div>
+    <div class="controls">
+      <button id="exportButton">Export List</button>
+      <input type="file" id="importInput" accept=".csv" style="display:none;">
+      <button id="importButton">Import List</button>
+      <button id="saveButton">Save List</button>
+      <button id="loadButton">Load List</button>
+    </div>
+    <div id="wallContainer" class="wall-container"></div>
+    <div id="result" class="result"></div>
+    <div id="removeContainer" class="remove-container"></div>
+    <div class="attribution">Author: Aaron Shi. Released in February 2025.</div>
+  </div>
+  <script type="module" src="app.js"></script>
+</body>
+</html>
